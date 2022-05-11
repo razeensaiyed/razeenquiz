@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <meta charset="UTF-8">
+ <meta name="description" content="Razeen's Quiz Game">
+ <meta name="keywords" content="HTML, CSS, JavaScript">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Razeen's Quiz Game</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+<style>
+body {
+ background-image: radial-gradient(aqua, aquamarine, blue);
+}
+form {
+ font-size:20px;
+}
+h1 { 
+ color:white;
+ text-align:center;
+ text-decoration-line:underline;
+ text-shadow:2px 2px 2px blue, 0 0 25px blue, 0 0 5px darkblue;
+ font-family:"Monoton", sans-serif;
+ font-size:50px;
+ border:6px double red;
+ border-radius:5px;
+ background-color:blue;
+}
+p {
+ color:black;
+ text-shadow: 2px 2px 3px gray;
+ font-size:20px
+}
+</style>
+</head>
+<body>
+<h1>Razeen's Quiz Game &#127918</h1>
+<hr>
+<p>Welcome player! This is an online quiz which is created just for fun. You will not be able to actually submit the answers because that requires the knowledge of the programming language known as 'PHP' which is not yet learnt by me. But you can cross check your answers by clicking the 'Submit' button.</p> 
+<br>
+<p>So please, take a chill pill, keep your mind fresh and try out this quiz.</p>
+<br>
+<br>
+<p>Firstly, I require you to fill in some not-so-personal-but-still-personal details.</p>
+<br>
+<br>
+<form action="/action_page.php" target="_blank">
+ <label for="name" style="color:white;">Name</label><br>
+ <input type="text" id="name" name="name"><br>
+ <label for="age"style="color:white;">Age</label><br>
+ <input type="number" id="age" name="age"><br>
+ <label for="city" style="color:white;">City</label><br>
+ <input type="text" id="city" name="city"><br>
+ <label for="favcolor" style="color:white;">Select your favourite color:</label><br>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+<br>
+<input type="button" onclick="alert('Thanks! Now you can move on with the quiz')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<hr>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">1] Which is the largest country in the world?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="usa" name="cntry" value="us">
+ <label for="usa">United States of America</label><br>
+ <input type="radio" id="ussr" name="cntry" value="su">
+ <label for="ussr">Russia</label><br>
+ <input type="radio" id="can" name="cntry" value="cnada">
+ <label for="can">Canada</label><br>
+ <input type="button" onclick="alert('The correct answer is - Russia')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">2] How many bones do babies have?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="adult" name="bone" value="twoosx">
+ <label for="adult">206</label><br>
+ <input type="radio" id="wrng" name="bone" value="ajeeb">
+ <label for="wrng">215</label><br>
+ <input type="radio" id="right" name="bone" value="three">
+ <label for="right">300</label><br>
+ <input type="button" onclick="alert('The correct answer is - 300')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">3] What is the capital of Australia</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="mel" name="aussie" value="melbourne">
+ <label for="mel">Melbourne</label><br>
+ <input type="radio" id="syd" name="aussie" value="sydney">
+ <label for="syd">Sydney</label><br>
+ <input type="radio" id="cran" name="aussie" value="canberra">
+ <label for="cran">Canberra</label><br>
+ <input type="button" onclick="alert('The correct answer is - Canberra')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">4] Who is known as the father of the internet?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="vint" name="intrnt" value="cerf">
+ <label for="vint">Vint Cerf</label><br>
+ <input type="radio" id="bob" name="intrnt" value="kahn">
+ <label for="bob">Bob Kahm</label><br>
+ <input type="radio" id="bab" name="intrnt" value="babbage">
+ <label for="bab">Charles Babbage</label><br>
+ <input type="button" onclick="alert('The correct answer is - Vint Cerf')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p>Please note, you have to select the accurate date for the next question</p>
+<p style="background-color:lightgreen; border-left: 6px solid green;">5] When did the second world war come to an end?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <label for="ww">Hint:It ended on 2nd September</label>
+ <input type="date" id="ww" name="war"> 
+ <input type="button" onclick="alert('The correct answer is - 2nd September 1945')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">6] How much percent of the earth's oceans are covered by plastic?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="thre" name="plstc" value="three">
+ <label for="thre">3%</label><br>
+ <input type="radio" id="fty" name="plstc" value="forty">
+ <label for="fty">40%</label><br>
+ <input type="radio" id="svn" name="plstc" value="svntn">
+ <label for="svn">17%</label><br>
+ <input type="button" onclick="alert('The correct answer is - 40%')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p>Please note, for this question you can select more than one options</p>
+<p style="background-color:lightgreen; border-left: 6px solid green;">7] Which countries make up North America?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="checkbox" id="usofa" name="usofa" value="USA">
+ <label for="usofa">United States Of America</label><br>
+ <input type="checkbox" id="canedda" name="canedda" value="Canada">
+ <label for="canedda">Canada</label><br>
+ <input type="checkbox" id="mex" name="mex" value="Mexico">
+ <label for="mex">Mexico</label><br>
+ <input type="checkbox" id="grnlnd" name="grnlnd" value="Greenland">
+ <label for="grnlnd">Greenland</label><br>
+ <input type="checkbox" id="aska" name="aska" value="Alaska">
+ <label for="aska">Alaska</label><br>
+ <input type="button" onclick="alert('The correct answer is - The first four options')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">8] Which is the smallest planet in our solar system?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="small" name="small" value="Mercury">
+ <label for="small">Mercury</label><br>
+ <input type="radio" id="hot" name="hot" value="Venus">
+ <label for="hot">Venus</label><br>
+ <input type="radio" id="dwrf" name="dwrf" value="Pluto">
+ <label for="dwrf">Pluto</label><br>
+ <input type="button" onclick="alert('The correct answer is - Mercury')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">9] When was the computer invented?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="nope" name="nope" value="1952">
+ <label for="nope">1952</label><br>
+ <input type="radio" id="nah" name="nah" value="1932">
+ <label for="nah">1932</label><br>
+ <input type="radio" id="krakt" name="krakt" value="1822">
+ <label for="krakt">1822</label><br>
+ <input type="button" onclick="alert('The correct answer is - 1822')" value="Submit">
+<br>
+<br>
+<input type="reset">
+</form> 
+<br>
+<br>
+<br>
+<p style="background-color:lightgreen; border-left: 6px solid green;">10] Who created this awesome quiz?</p>
+<form action="/action_page.php" target="_blank" style="color:black;
+ text-shadow: 2px 2px 3px gray;">
+ <input type="radio" id="meee" name="meee" value="Razeen Saiyed">
+ <label for="meee">Razeen Saiyed &#128513</label><br>
+ <input type="button" onclick="alert('There is only one correct answer')" value="Submit">
+</form> 
+<hr>
+<p>Thank you dear player for playing this quiz. Do let me know if you liked this game. Apologies for any bugs that may have appeared.</p>
+
+<img src="https://media4.giphy.com/media/mP8GermRyOFWV8PQeq/giphy.gif?cid=ecf05e476sscrxmqpzsxs7vbgfe5ssldl7zduf0c2eghk6ta&rid=giphy.gif&ct=g" alt="Bye Bye">
+
+</body>
+</html>
